@@ -1,7 +1,7 @@
 # Seamster
 
 Seamaster is a container centric continuous integration and continuous
-deployment (CI/CD) platform. The platform is based on the idea of using ]
+deployment (CI/CD) platform. The platform is based on the idea of using
 [Docker](https://www.docker.com)
 containers as the primary build mechanism. This approach will radically
 simplify the CI/CD platform.
@@ -26,21 +26,22 @@ into a few high-level components and a few simple steps.
 
 ## CI/CD Components
 
-1. Build/Test Dockerfile - this Dockerfile / image will be responsible for:
+1. **Build/Test Dockerfile** - this Dockerfile / image will be
+responsible for:
     * Loading the source code into the container
     * Installing any tools required to build and test the code
     * Building the software, if required
     * Running automated tests
-2. Docker Compose File - to be used to launch and link any additional
+2. **Docker Compose File** - to be used to launch and link any additional
    software needed to test the application (e.g. database)
-3. Production Build Dockerfile - specifies the Docker image you will
+3. **Production Build Dockerfile** - specifies the Docker image you will
    use to deploy into your production environment. It will *not* include
    any testing tools and should remove any build tools from the container.
    It will then push the container image to either Docker Hub or a
    Docker Trusted Registry.
-4. Deployment Dockerfile - specifies the container image that will include
-   the necessary steps to deploy your code from the Docker Hub or
-   Docker Trusted Registry into your target execution environment.
+4. **Deployment Dockerfile** - specifies the container image that
+will include the necessary steps to deploy your code from the Docker Hub or
+Docker Trusted Registry into your target execution environment.
 
 ## CI/CD Steps
 
@@ -59,6 +60,11 @@ need network access and permissions to your target deploymet platform.
 ## Deployment Containers
 
 ## Deployment Targets
+
+# Developers and Contributors
+
+For those developing on this project and those wishing to contribute
+please see our [wiki page](https://github.com/alim/seamaster/wiki)
 
 # License
 
