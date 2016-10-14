@@ -18,5 +18,8 @@ Bundler.require(*Rails.groups)
 
 module Seamaster
   class Application < Rails::Application
+    config.generators do |g|
+        g.orm :mongoid
+    end
   end
 end
