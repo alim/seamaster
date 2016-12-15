@@ -1,5 +1,7 @@
 # Seamster
 
+[![Code Climate](https://codeclimate.com/github/alim/seamaster/badges/gpa.svg)](https://codeclimate.com/github/alim/seamaster)
+
 Seamaster is a container centric continuous integration and continuous
 deployment (CI/CD) platform. The platform is based on the idea of using
 [Docker](https://www.docker.com)
