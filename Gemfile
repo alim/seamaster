@@ -10,6 +10,8 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'redis', '~> 3.0'
 gem 'mongoid'
+gem 'polymer-rails'
+gem 'polymer-elements-rails'
 
 group :development, :test do
   gem 'pry-byebug', platform: :mri
