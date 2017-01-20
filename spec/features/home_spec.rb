@@ -7,6 +7,8 @@ describe 'the login process' do
 
       expect(page).to have_content("Seamaster is a container centric continuous integration and continuous deployment (CI/CD) platform")
       expect(page).to have_link("login")
+      click_on("login")
+      expect(page).to have_content("Login Page")
     end
   end
 end
