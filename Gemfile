@@ -9,11 +9,14 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'redis', '~> 3.0'
-gem 'mongoid'
+gem 'mongoid', '~> 6.0'
+gem 'strip_attributes', '~> 1.8'
+gem 'devise', '~> 4.2'
 gem 'polymer-rails'
 gem 'polymer-elements-rails'
 
 group :development, :test do
+  gem 'factory_girl_rails'
   gem 'pry-byebug', platform: :mri
   gem 'rspec-rails'
   gem 'rspec-its'
